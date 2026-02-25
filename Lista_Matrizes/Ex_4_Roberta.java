@@ -1,11 +1,8 @@
 package Lista_Matrizes;
 
-import java.util.Scanner;
-
 public class Ex_4_Roberta {
-    final static Scanner sc = new Scanner(System.in);
 
-    public static int calcularColunasDesejadas(int[][] matriz, int soma){
+    public static int calcularColunasDesejadas(int[][] matriz, int soma) {
         for (int i = 0; i < matriz.length; i++) {
             soma += matriz[i][2] + matriz[i][4];
         }
@@ -18,7 +15,7 @@ public class Ex_4_Roberta {
         int soma = 0;
 
         metodos.receberValores(matriz);
-        soma = calcularColunasDesejadas(matriz,soma);
+        soma = calcularColunasDesejadas(matriz, soma);
         System.out.println(soma);
     }
 }

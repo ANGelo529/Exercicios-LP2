@@ -1,11 +1,8 @@
 package Lista_Matrizes;
 
-import java.util.Scanner;
-
 public class ex_1_Roberta {
-    final static Scanner sc = new Scanner(System.in);
 
-    public static int calcularSomaTotal(int[][] matriz){
+    public static int calcularSomaTotal(int[][] matriz) {
         int soma = 0;
         for (int i = 0; i < matriz.length; i++) {
             for (int j = 0; j < matriz[0].length; j++) {

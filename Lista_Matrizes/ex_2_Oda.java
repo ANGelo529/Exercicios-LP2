@@ -11,7 +11,7 @@ public class ex_2_Oda {
                 if ((i + j) % 2 == 0) {
                     matriz[i][j] = (int) -Math.pow(i, 2);
                 } else {
-                    matriz[i][j] = (int) 2 * i * j;
+                    matriz[i][j] = 2 * i * j;
                 }
             }
         }

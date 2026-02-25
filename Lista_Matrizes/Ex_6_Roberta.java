@@ -1,9 +1,6 @@
 package Lista_Matrizes;
 
-import java.util.Scanner;
-
 public class Ex_6_Roberta {
-    final static Scanner sc = new Scanner(System.in);
 
     public static double[][] calcularMaior(int[][] matriz) {
         int maiorValor = 0;
@@ -23,7 +20,7 @@ public class Ex_6_Roberta {
                 matrizDividida[i][j] = matriz[i][j] / maiorValor;
             }
         }
-        
+
         return matrizDividida;
     }
 

@@ -1,9 +1,6 @@
 package Lista_Matrizes;
 
-import java.util.Scanner;
-
 public class Ex_3_Roberta {
-    final static Scanner sc = new Scanner(System.in);
 
     public static int calcularSomaDiagonalSecundaria(int[][] matriz, int soma) {
         for (int i = 0; i < matriz.length; i++) {
