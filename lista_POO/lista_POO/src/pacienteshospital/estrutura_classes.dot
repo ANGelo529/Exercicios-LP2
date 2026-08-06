@@ -1,0 +1,18 @@
+digraph EstruturaClasses {
+    rankdir=TB;
+    node [shape=box, style="rounded,filled", fontname="Helvetica", fontsize=14, color="#2c3e50", fillcolor="#ecf0f1"];
+    edge [color="#7f8c8d", penwidth=2];
+
+    // Nós
+    Quarto   [label="Quarto", fillcolor="#3498db", fontcolor="white"];
+    Paciente [label="Paciente", fillcolor="#2ecc71", fontcolor="white"];
+    Enfermeira [label="Enfermeira", fillcolor="#2ecc71", fontcolor="white"];
+    MedicoResponsavel [label="Médico Responsável", fillcolor="#e67e22", fontcolor="white"];
+    Medicamento [label="Medicamento", fillcolor="#9b59b6", fontcolor="white"];
+
+    // Relações (árvore)
+    Quarto -> Paciente;
+    Quarto -> Enfermeira;
+    Paciente -> MedicoResponsavel;
+    MedicoResponsavel -> Medicamento;
+}
