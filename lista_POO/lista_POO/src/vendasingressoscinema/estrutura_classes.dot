@@ -1,0 +1,22 @@
+digraph EstruturaClasses {
+    rankdir=TB;
+    node [shape=box, style="rounded,filled", fontname="Helvetica", fontsize=14, color="#2c3e50", fillcolor="#ecf0f1"];
+    edge [color="#7f8c8d", penwidth=2];
+
+    // Nós
+    Cinema   [label="Cinema", fillcolor="#3498db", fontcolor="white"];
+    Sala     [label="Sala", fillcolor="#2ecc71", fontcolor="white"];
+    Cliente  [label="Cliente", fillcolor="#2ecc71", fontcolor="white"];
+    Sessao   [label="Sessão", fillcolor="#e67e22", fontcolor="white"];
+    Assento  [label="Assento", fillcolor="#9b59b6", fontcolor="white"];
+    Guloseima [label="Guloseima", fillcolor="#9b59b6", fontcolor="white"];
+    Filme    [label="Filme", fillcolor="#e74c3c", fontcolor="white"];
+
+    // Relações (árvore)
+    Cinema -> Sala;
+    Cinema -> Cliente;
+    Sala -> Sessao;
+    Sessao -> Filme;
+    Cliente -> Assento;
+    Cliente -> Guloseima;
+}
