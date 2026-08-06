@@ -1,0 +1,18 @@
+digraph EstruturaClasses {
+    rankdir=TB;
+    node [shape=box, style="rounded,filled", fontname="Helvetica", fontsize=14, color="#2c3e50", fillcolor="#ecf0f1"];
+    edge [color="#7f8c8d", penwidth=2];
+
+    // Nós
+    Loja   [label="Loja", fillcolor="#3498db", fontcolor="white"];
+    Clientes   [label="Clientes", fillcolor="#2ecc71", fontcolor="white"];
+    Funcionario [label="Funcionário", fillcolor="#2ecc71", fontcolor="white"];
+    Produtos [label="Produtos", fillcolor="#2ecc71", fontcolor="white"];
+    Fornecedor [label="Fornecedor", fillcolor="#e67e22", fontcolor="white"];
+
+    // Relações
+    Loja -> Clientes;
+    Loja -> Funcionario;
+    Loja -> Produtos;
+    Produtos -> Fornecedor;
+}
